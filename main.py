@@ -21,7 +21,7 @@ def get_json(headers,method,path,body):
     for i in headers:
         key, val = i
         d["headers"][key]=val
-    resp = json.dumps(d,indent=4)
+    resp = json.dumps(d)
     print(resp)
     return resp
 
